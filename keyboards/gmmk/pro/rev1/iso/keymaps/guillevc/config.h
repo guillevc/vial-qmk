@@ -21,11 +21,17 @@
 #define DRIVER_2_LED_TOTAL 33
 #define RGB_MATRIX_LED_COUNT (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
 
-//enable RGB Matrix Effects for Vial
+// enable RGB Matrix Effects for Vial
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define RGB_MATRIX_KEYPRESSES
 
-//Vial Keyboard UID
-#define VIAL_KEYBOARD_UID {0xEC, 0xFE, 0x5D, 0x44, 0x1A, 0x9C, 0x70, 0xCC}
-#define VIAL_UNLOCK_COMBO_ROWS { 1, 10 }
-#define VIAL_UNLOCK_COMBO_COLS { 3, 4 }
+// Vial Keyboard UID
+#define VIAL_KEYBOARD_UID \
+    { 0xEC, 0xFE, 0x5D, 0x44, 0x1A, 0x9C, 0x70, 0xCC }
+#define VIAL_UNLOCK_COMBO_ROWS \
+    { 1, 10 }
+#define VIAL_UNLOCK_COMBO_COLS \
+    { 3, 4 }
+
+// Extend `vial` keymap
+#define USB_POLLING_INTERVAL_MS 1
